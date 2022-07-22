@@ -7,7 +7,7 @@ app.use(express.urlencoded({extended: false}))
 app.use(express.json()) 
 app.use(cors())
 
-const port = 9090
+const port = process.env.PORT
 
 // const strconexao = 'postgres://postgres:admin@localhost/postgres'
 const strconexao = process.env.DATABASE_URL
